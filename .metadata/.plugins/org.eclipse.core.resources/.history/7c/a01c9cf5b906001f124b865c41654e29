@@ -1,0 +1,31 @@
+package sup1.model;
+
+public class Score {
+	//필드
+	private int 국어;
+	private int 영어;
+	private int 수학;
+	private int 총점;
+	private double 평균;
+	
+	
+
+	
+//메서드
+	//필수 생성자
+	public Score(int 국어, int 영어, int 수학, int 총점, double 평균) {
+		super();
+		this.국어 = 국어;
+		this.영어 = 영어;
+		this.수학 = 수학;
+		this.총점 = 총점;
+		this.평균 = 평균;
+	}
+	
+	//void 점수
+	public void 결과() {
+		System.out.println("총점 : " + 국어 + 영어 + 수학);
+		System.out.println("평균 : " + (국어+영어+수학) / 3);
+	}
+ 
+}

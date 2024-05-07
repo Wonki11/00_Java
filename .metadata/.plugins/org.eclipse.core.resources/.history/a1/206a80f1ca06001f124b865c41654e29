@@ -1,0 +1,10 @@
+package ncs.test10;
+
+public class Book {
+//필드
+		private String 카테고리;
+		private String 책이름;
+		private double 책가격;
+		private double 할인율;
+	
+}

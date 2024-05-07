@@ -1,0 +1,24 @@
+package com.kh.SocketEx;
+
+import java.io.IOException;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+//파티참가자
+public class ClientEx {
+	public static void main(String[] args) {
+		
+		
+		
+		try {
+			Socket 참가자 = new Socket("localhost", 12349    );
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

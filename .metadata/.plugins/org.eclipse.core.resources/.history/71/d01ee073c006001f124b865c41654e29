@@ -1,0 +1,16 @@
+package sup2.model;
+
+import java.util.Scanner;
+
+public class Student {
+	String 이름;
+	int 학년;
+	int 반;
+	int 번호;
+	char 성별;
+	double 성적;
+//메서드
+	//필수 메서드
+	//public void 정보
+	
+}

@@ -1,0 +1,22 @@
+package com.kh.SocketEx;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class ServerPre {
+	public static void main(String[] args) {
+		try {
+			ServerSocket a = new ServerSocket(12344);
+			System.out.println("서버 오픈");
+			
+			Socket s = a.accept();
+			System.out.println("입장");
+			
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

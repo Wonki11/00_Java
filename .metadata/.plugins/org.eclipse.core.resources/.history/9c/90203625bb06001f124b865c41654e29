@@ -1,0 +1,12 @@
+package com.kh.test.main;
+
+public class Test8 {
+	public static void main(String[] args) {
+		int[][] 배열 = {{12,41,36,56},{82,10,12,61},{14,16,18,78},{45,26,72,23}};
+		double 합 = 0;
+		
+		for (int[] i : 배열) {
+			System.out.println("배열 총합 : " + 합+i);
+		}
+	}
+}

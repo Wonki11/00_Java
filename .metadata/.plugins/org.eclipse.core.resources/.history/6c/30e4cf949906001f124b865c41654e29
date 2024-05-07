@@ -1,0 +1,15 @@
+package com.kh.test.main;
+
+import java.util.Scanner;
+
+public class Test1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("정수를 입력하세요");
+		int i = sc.nextInt();
+		
+		if(int i = 0  i <= 100  i++) {
+			System.out.println();
+		}
+	}
+}

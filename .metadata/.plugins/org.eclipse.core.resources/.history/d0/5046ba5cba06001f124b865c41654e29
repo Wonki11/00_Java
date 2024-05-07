@@ -1,0 +1,9 @@
+package sup1.controller;
+
+import sup1.model.*;
+
+public class TestSup1 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+	}
+}

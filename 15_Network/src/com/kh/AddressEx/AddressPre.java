@@ -1,0 +1,64 @@
+package com.kh.AddressEx;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+public class AddressPre {
+	public static void main(String[] args) {
+		//www.google.com
+		try {
+			InetAddress 구글 = InetAddress.getByName("www.google.com");
+			System.out.println("호스트명 : " + 구글.getHostName());
+			System.out.println("ip 주소 : " + 구글.getHostAddress());
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+			try {
+				InetAddress 구글1 = InetAddress.getByName("142.250.204.68");
+				System.out.println("호스트명 : " + 구글1.getHostName());
+				System.out.println("ip 주소 : " + 구글1.getHostAddress());
+			} catch (UnknownHostException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			//나의 컴퓨터 이름과 자리번호 확인하기
+			//get localhost
+			InetAddress 구글2;
+			try {
+				구글2 = InetAddress.getLocalHost();
+				System.out.println(구글2.getHostAddress());
+			} catch (UnknownHostException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			// www.facebook.com 페이스북 호스트이름 호스트주소
+			try {
+				InetAddress 페북 = InetAddress.getByName("facebook.com");
+				System.out.println(페북);
+				
+			} catch (UnknownHostException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		
+			
+			// www.instagram.com 인스타그램 호스트이름 호스트주소 검색
+			try {
+				InetAddress 인스타 = InetAddress.getByName("www.instagram.com");
+				System.out.println(인스타);
+			} catch (UnknownHostException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+			
+			
+			
+	}
+	
+}

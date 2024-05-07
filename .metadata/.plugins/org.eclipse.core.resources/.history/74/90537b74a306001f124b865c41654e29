@@ -1,0 +1,50 @@
+package com.kh.test.main;
+
+import java.util.Scanner;
+
+public class Test3 {
+	public static void main(String[] args) {
+		//while문을 사용해서 switch문 계속 숫자 작성하게 만들어주고
+		// case 3: 종료 만들어주기
+		Scanner sc = new Scanner(System.in);
+		System.out.println("숫자 작성");
+		int date = sc.nextInt(); // 숫자를 받는 스캐너 작성
+		String 할일; //지역변수 -> 전역변수
+		
+		//while에 true 대신에 true가 담겨져있는 변수를 하나 만들어주고
+		//변수값을 true > false 로 만들어준 후 종료시키기
+		boolean 계속 = true;
+		
+		while(계속) {
+			//switch case 문 실행해보기
+			switch(date) {
+			case 1:
+				할일 = "월요일 : 업무";
+				break;
+			case 2:
+				할일 = "화요일 : 공부";
+				break;
+			case 3:
+				할일 = "종 료";
+				계속 = false;
+				break;
+			default :
+				할일 = "날짜와 관계없이 휴식";
+			
+						
+			}
+			System.out.println("일정 : " + 할일);
+			return;
+		}
+	
+		
+		
+		
+		
+
+		
+		
+	
+		
+	}
+}

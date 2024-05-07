@@ -1,0 +1,7 @@
+package com.kh.SocketEx;
+
+public class ServerPre {
+	public static void main(String[] args) {
+		
+	}
+}

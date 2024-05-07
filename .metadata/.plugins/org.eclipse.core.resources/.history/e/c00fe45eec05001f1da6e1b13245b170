@@ -1,0 +1,18 @@
+package com.kh.StackEx;
+
+import java.util.Stack;
+
+public class StackPre {
+	public static void main(String[] args) {
+		Stack<Integer> 스택 = new Stack<>();
+		
+		스택.add(10);
+		스택.add(30);
+		스택.add(50);
+		스택.add(40);
+		스택.add(20);
+		
+		int 맨위 = 스택.pop();
+		System.out.println(맨위);
+	}
+}

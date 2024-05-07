@@ -1,0 +1,28 @@
+package com.kh.AddressEx;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+public class AddressPre {
+	public static void main(String[] args) {
+		//www.google.com
+		try {
+			InetAddress 구글 = InetAddress.getByName("www.google.com");
+			System.out.println("호스트명 : " + 구글.getHostName());
+			System.out.println("ip 주소 : " + 구글.getHostAddress());
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+			try {
+				InetAddress 구글1 = InetAddress.getByName("142.250.204.68");
+				System.out.println("호스트명 : " + 구글1.getHostName());
+				System.out.println("ip 주소 : " + 구글.getHostAddress());
+			} catch (UnknownHostException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	}
+	
+}
